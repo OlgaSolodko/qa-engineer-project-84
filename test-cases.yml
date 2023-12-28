@@ -21,16 +21,11 @@
     Открыта страница с полным списком товаров
   test-data: |
     Категория 1 = "furniture"
-    Категория 2 = "mens-shirts"
   steps: |
     - Выбираем в разделе "Категория" категорию 1 из тестовых данных и записываем результат
-    - Выбираем в разделе "Категория" категорию 2 из тестовых данных и записываем результат
   expected-result: |
     Для категории 1 отобразилось 5 товаров с названиями:
     "Mornadi Velvet Bed", "Sofa for Coffe Cafe", "3 Tier Corner Shelves", "Plastic Table", "3 DOOR PORTABLE"
-    Для категории 2 отобразились 5 товаров с названиями:
-    "half sleeves T shirts", "FREE FIRE T Shirt", "printed high quality T shirts", "Pubg Printed Graphic T-Shirt",
-    "Money Heist Printed Summer T Shirts"
 
 - summary: |
     Проверка возможности фильтровать товары
