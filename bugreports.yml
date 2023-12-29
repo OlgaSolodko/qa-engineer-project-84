@@ -1,0 +1,111 @@
+---
+- summary: |
+    Поиск по ключевому слову работает только для товаров текущей страницы
+  environment: |
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit)
+    Firefox browser, 121.0 (64-bit)
+    https://hexlet-products-store.vercel.app/
+  steps-to-reproduce: |
+    1. Открыть 1-ую страницу магазина
+    2. Ввести в поисковую форму "plastic table", который находится на 2 странице.
+  expected-result: |
+    На экране останется 1 товар, содержащий в имени "plastic table"
+  actual-result: |
+    Сообщение: "Ничего не найдено!"
+    Ошибка на скриншое assets/keyword_not_found.png
+  
+- summary: |
+    В левом сайдбаре отображается только список категорий на текущей странице
+  environment: |
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit)
+    Firefox browser, 121.0 (64-bit)
+    https://hexlet-products-store.vercel.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу магазина и записать список категорий
+    2. Переключиться на вторую страницу
+  expected-result: |
+    В левом сайдбаре список категорий не изменился
+  actual-result: |
+    Список категорий изменился на другой
+
+- summary: |
+    В левом сайдбаре отображается только список производителей на текущей странице
+  environment: |
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit)
+    Firefox browser, 121.0 (64-bit)
+    https://hexlet-products-store.vercel.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу магазина и записать список производителей
+    2. Переключиться на вторую страницу
+  expected-result: |
+    В левом сайдбаре список производителей не изменился
+  actual-result: |
+    Старые производители исчезли, появились новые производители
+
+- summary: |
+    Сайт не переключается в адаптивный дизайн
+  environment: |
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit), Android 10
+    https://hexlet-products-store.vercel.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу магазина
+  expected-result: |
+    Сайт переключился на адаптивный дизайн
+  actual-result: |
+    Ошибка на скриншоте assets/not_adaptive_design.png
+    Сайт не переключился в адаптивный дизайн: элементы наезжают друг на друга, расположены неудобно
+
+- summary: |
+    Страница "Корзины" не переключается в адаптивный дизайн
+  environment: |
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit), Android 10
+    https://hexlet-products-store.vercel.app/сart
+  steps-to-reproduce: |
+    1. Открыть страницу корзины c добавленными товарами
+  expected-result: |
+    Элементы отображаются в адаптивном дизайне
+  actual-result: |
+    Ошибка на скриншоте assets/cart_not_adaptive.png
+    Страница корзины не переключилась в адаптивный дизайн: элементы наезжают друг на друга, расположены неудобно
+
+- summary: |
+    После клика на "Очистить корзину" не удаляются данные корзины из сессии браузера
+  environment: |
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit), Android 10
+    https://hexlet-products-store.vercel.app/сart
+  steps-to-reproduce: |
+    1. Открыть страницу корзины c добавленными товарами
+    2. Нажать на "Очистить корзину"
+    3. Перезагрузить страницу
+  expected-result: |
+    Корзина пуста.
+  actual-result: |
+    После перезагрузки страницы все товары снова отображаются
+
+- summary: |
+    Описания товаров и цены не меняются при переключении языка интерфейса
+  environment:
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit)
+    https://hexlet-products-store.vercel.app/сart
+    https://hexlet-products-store.vercel.app
+  steps-to-reproduce: |
+    1. Выбрать русский язык интерфейса
+  expected-result: |
+    Описания товаров отображаются на русском языке, а цены конвертируются в рубли
+  actual-result: |
+    Описания товаров остаются на английском языке.
+    Цены не конвертируются из долларов в рубли
+
+- summary: |
+    Пользователь может оплатить товар
+  environment:
+    Google Chrome, Version 120.0.6099.129 (Official Build) (64-bit)
+    https://hexlet-products-store.vercel.app/сart
+  steps-to-reproduce: |
+    1. Нажать на кнопку "Оформить заказ"
+  expected-result: |
+    Открывается страница ввода номера телефона пользователя и оплаты заказа
+  actual-result: |
+    Появляется сообщение, что заказ успешно оформлен.
+    Добавить телефон для связи с покупателем нельзя.
+    Форма оплаты не открывается.
