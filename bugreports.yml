@@ -299,7 +299,7 @@
 
 - summary: |
     При клике на кнопку "оформить заказ" в консоли браузера возвращается 500 ошибка
-  environmanet:
+  environment:
     https://hexlet-products-store.vercel.app/cart
     Русская версия сайта
   steps-to-reproduce: |
