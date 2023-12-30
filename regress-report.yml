@@ -116,7 +116,7 @@ test-cases:
 bugreports:
   - summary: |
       При клике на кнопку "оформить заказ" в консоли браузера возвращается 500 ошибка
-    environment:
+    environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app/cart
       Русская версия сайта
     steps-to-reproduce: |
