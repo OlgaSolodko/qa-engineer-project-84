@@ -1,5 +1,4 @@
 ---
-# functional
 - summary: |
     Проверка поиска товаров по ключевому слову
   requirement: |
@@ -124,7 +123,7 @@
   requirement: |
     Пользователь не может добавить в корзину больше единиц товара, чем доступно
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
   test-data: |
     Нет
   steps: |
@@ -138,7 +137,7 @@
   requirement: |
     Пользователь должен иметь возможность фильтровать товары
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
   test-data: |
     Нижня граница - 0, верхняя граница - 22
   steps: |
@@ -151,7 +150,7 @@
   requirement: |
     Пользователь должен иметь возможность фильтровать товары
   prerequisites: |
-    Открыта 1-ая страница https://hexlet-products-store.vercel.app/
+    Открыта 1-ая страница магазина
   test-data: |
     Товар Elbow Macaroni - 400 gm по цене 11.82$
   steps: |
@@ -164,7 +163,7 @@
   requirement: |
     В полях цены не могут быть установлены отрицательные числа
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
   test-data: |
     Нижняя граница - 0, верхняя граница - -1
   steps: |
@@ -177,7 +176,7 @@
   requirement: |
     Сайт нужно разработать с учетом удобства использования и оптимизировать для скорости работы
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
   test-data: |
     Фильтр = "Apple" и Фильтр "Samsung"
     Категория: "laptops"
@@ -344,7 +343,7 @@
   requirement: |
     В зависимости от выбранного языка элементы интерфейса переводятся соответственно
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
     Открыта английская версия сайта
   test-data: |
     Нет
@@ -358,7 +357,7 @@
   requirement: |
     При переключении языка описания товаров и цены переключаются в соответствии с выбранным языком
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
     Открыта английская версия сайта
   test-data: |
     Нет
@@ -372,7 +371,7 @@
   requirement: |
     При переключении языка описания товаров и цены переключаются в соответствии с выбранным языком
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта страница главная страница магазина
     Открыта английская версия сайта
   test-data: |
     Нет
@@ -386,7 +385,7 @@
   requirement: |
     Все элементы интерфейса кликабельны
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
   test-data: |
     Нет
   steps: |
@@ -400,7 +399,7 @@
   requirement: |
     Все элементы интерфейса кликабельны
   prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина
   test-data: |
     Нет
   steps: |
